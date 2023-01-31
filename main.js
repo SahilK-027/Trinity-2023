@@ -612,7 +612,7 @@ loader.load(
     function (audioBuffer) {
         // set the audio object buffer to the loaded object
         hoverSound.setBuffer(audioBuffer);
-        hoverSound.setVolume(1);
+        hoverSound.setVolume(0.7);
     }
 );
 loader.load(
