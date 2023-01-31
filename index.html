@@ -1,0 +1,997 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trinity</title>
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <!--  
+          font-family: 'Inter', sans-serif;
+          font-family: 'Roboto Slab', serif;
+    ---->
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <link rel="icon" type="image/x-icon" href="/assets/logos/favicon.ico" />
+
+    <!-- SCRIPT IN JAVASCRIPT -->
+    <script>
+      const showAnswer = () => {
+        const ans = document.getElementById('answerdiv')
+        const plus_btn = document.getElementById('plus_btn')
+        const minus_btn = document.getElementById('minus_btn')
+
+        ans.style.transition = 'all 2s'
+        ans.style.display = 'block'
+        plus_btn.style.display = 'none'
+        minus_btn.style.display = 'block'
+      }
+      const hideAnswer = () => {
+        const ans = document.getElementById('answerdiv')
+        const plus_btn = document.getElementById('plus_btn')
+        const minus_btn = document.getElementById('minus_btn')
+
+        ans.style.transition = 'all 2s'
+        ans.style.display = 'none'
+        plus_btn.style.display = 'block'
+        minus_btn.style.display = 'none'
+      }
+      const showAnswer2 = () => {
+        const ans = document.getElementById('answerdiv2')
+        const plus_btn = document.getElementById('plus_btn2')
+        const minus_btn = document.getElementById('minus_btn2')
+
+        ans.style.transition = 'all 2s'
+        ans.style.display = 'block'
+        plus_btn.style.display = 'none'
+        minus_btn.style.display = 'block'
+      }
+      const hideAnswer2 = () => {
+        const ans = document.getElementById('answerdiv2')
+        const plus_btn = document.getElementById('plus_btn2')
+        const minus_btn = document.getElementById('minus_btn2')
+
+        ans.style.transition = 'all 2s'
+        ans.style.display = 'none'
+        plus_btn.style.display = 'block'
+        minus_btn.style.display = 'none'
+      }
+      const showAnswer3 = () => {
+        const ans = document.getElementById('answerdiv3')
+        const plus_btn = document.getElementById('plus_btn3')
+        const minus_btn = document.getElementById('minus_btn3')
+
+        ans.style.transition = 'all 2s'
+        ans.style.display = 'block'
+        plus_btn.style.display = 'none'
+        minus_btn.style.display = 'block'
+      }
+      const hideAnswer3 = () => {
+        const ans = document.getElementById('answerdiv3')
+        const plus_btn = document.getElementById('plus_btn3')
+        const minus_btn = document.getElementById('minus_btn3')
+
+        ans.style.transition = 'all 2s'
+        ans.style.display = 'none'
+        plus_btn.style.display = 'block'
+        minus_btn.style.display = 'none'
+      }
+      const showAnswer4 = () => {
+        const ans = document.getElementById('answerdiv4')
+        const plus_btn = document.getElementById('plus_btn4')
+        const minus_btn = document.getElementById('minus_btn4')
+
+        ans.style.transition = 'all 2s'
+        ans.style.display = 'block'
+        plus_btn.style.display = 'none'
+        minus_btn.style.display = 'block'
+      }
+      const hideAnswer4 = () => {
+        const ans = document.getElementById('answerdiv4')
+        const plus_btn = document.getElementById('plus_btn4')
+        const minus_btn = document.getElementById('minus_btn4')
+
+        ans.style.transition = 'all 2s'
+        ans.style.display = 'none'
+        plus_btn.style.display = 'block'
+        minus_btn.style.display = 'none'
+      }
+      const showAnswer5 = () => {
+        const ans = document.getElementById('answerdiv5')
+        const plus_btn = document.getElementById('plus_btn5')
+        const minus_btn = document.getElementById('minus_btn5')
+
+        ans.style.transition = 'all 2s'
+        ans.style.display = 'block'
+        plus_btn.style.display = 'none'
+        minus_btn.style.display = 'block'
+      }
+      const hideAnswer5 = () => {
+        const ans = document.getElementById('answerdiv5')
+        const plus_btn = document.getElementById('plus_btn5')
+        const minus_btn = document.getElementById('minus_btn5')
+
+        ans.style.transition = 'all 2s'
+        ans.style.display = 'none'
+        plus_btn.style.display = 'block'
+        minus_btn.style.display = 'none'
+      };
+    </script>
+  </head>
+  <body>
+    <div id="app">
+      <!--=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=
+        Audios
+    =*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*= -->
+      <!--=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=
+        Loader
+    =*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*= -->
+      <div id="loader">
+        <div class="logo-loader-box">
+          <div class="ring"></div>
+          <div class="ring"></div>
+          <div class="ring"></div>
+          <img
+            class="loader-logo"
+            src="/assets/logos/nav-bar-logo.png"
+            alt="logo"
+          />
+        </div>
+        <div class="loading-container">
+          <div class="loading-progress"></div>
+        </div>
+        <p class="loading-percentage">0 %</p>
+        <p class="loading-page-text">
+          © 2023 | Please wait we are loading your web experience.
+        </p>
+      </div>
+
+      <!--=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=
+        CANVAS SECTION
+    =*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*= -->
+      <div class="main-page">
+        <canvas class="webgl"></canvas>
+        <!--=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=
+        Home Page
+    =*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*= -->
+        <!-- POP-UP -->
+        <div class="pop-up-container">
+          <div class="pop-up">
+            <div class="warning-logo">
+              <i class="fa-solid fa-triangle-exclamation"></i>
+              <h1>WARNING</h1>
+            </div>
+            <div class="pop-up-text">
+              <p>
+                "
+                <strong>Attention mobile users:</strong>
+                This website uses WebGL for 3D interactive components, which may
+                not be fully supported on the mobile display. For the best
+                interactive browsing experience, we recommend visiting our
+                website on a
+                <strong>desktop or laptop computer.</strong>
+                Thank you for understanding!"
+              </p>
+            </div>
+            <div class="close-popup-btn">
+              <button id="click-pop-up-close">CLOSE</button>
+            </div>
+          </div>
+        </div>
+
+        <section class="section1 animation">
+          <!--=*=*=*= NAVBAR =*=*=*= -->
+          <div class="music-bars">
+            <span class="stroke"></span>
+            <span class="stroke"></span>
+            <span class="stroke"></span>
+            <span class="stroke"></span>
+            <span class="stroke"></span>
+          </div>
+          <div class="header">
+            <nav class="navbar">
+              <div class="left">
+                <div>
+                  <a href="#">
+                    <img
+                      class="nav-logo"
+                      src="/assets/logos/nav-bar-logo.png"
+                      alt="logo"
+                    />
+                  </a>
+                </div>
+                <div class="nav-list">
+                  <ul>
+                    <a id="click-1" class="nav-items" href="#">
+                      <li>Home</li>
+                    </a>
+                    <a
+                      id="click-2"
+                      class="nav-items"
+                      href="https://trinity-docs.vercel.app/"
+                    >
+                      <li>Docs</li>
+                    </a>
+                    <a id="click-3" class="nav-items" href="#">
+                      <li>
+                        <i class="fa-solid fa-lock"></i>
+                        Quiz
+                      </li>
+                    </a>
+                  </ul>
+                </div>
+              </div>
+              <div class="right">
+                <a id="click-4" href="https://trinity-community.vercel.app/">
+                  <button class="register-btn">Community</button>
+                </a>
+                <a id="click-5" href="https://trinity-register.vercel.app/">
+                  <button class="register-btn">Register</button>
+                </a>
+              </div>
+            </nav>
+          </div>
+          <!--=*=*=*= HOME PAGE CONTENT =*=*=*= -->
+          <div class="home-page-container">
+            <div class="home-left-container">
+              <h2>RSCOE ACM Presents,</h2>
+              <h1>TRINITY</h1>
+              <h6>Design Develop Deploy</h6>
+              <p>
+                The main goal of the event is to make our juniors aware of the
+                three stages of web development viz. design, develop, and
+                version control. We'll teach them the fundamentals of Canva, web
+                development, and GitHub for this.
+              </p>
+             <a href="https://trinity-register.vercel.app/"><button id="click-6">Register</button></a> 
+            </div>
+            <div class="home-right-container"></div>
+          </div>
+
+          <img
+            class="rocket"
+            src="/assets/images/rocket1.png"
+            alt="img"
+          />
+        </section>
+
+        <!--=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=
+        Learning Section
+    =*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*= -->
+        <section class="section2">
+          <div class="learn-page-container">
+            <div class="learn-left-container">
+              <canvas class="webgl-2"></canvas>
+            </div>
+            <div class="learn-right-container">
+              <h3 class="section-head">What will you learn?</h3>
+              <p class="info">
+                <br />
+                The boot camp is accessible to beginners. We will start by
+                discovering what DEVELOPMENT is and why using the code hosting
+                platform for version control is a must. We will then discover
+                the three main phases of any development (let it be APP or WEB
+                basics remain the same))and once the basics are acquired, we
+                will move on to practical hands-on web development. Wherein we
+                will design a simple but beautiful-looking website using design
+                software CANVA, then develop in VS-CODE it with HTML, CSS, and a
+                bit of javascript. And then deploy it using GitHub and Netlify
+                (OR Vercel).
+                <br />
+                <br />
+                At the end of the boot camp, you will have a basic understanding
+                of web development and enough experience to start your projects.
+
+                <br />
+                <br />
+                As a bonus, You'll discover how to leverage GitHub's version
+                control system to edit a deployed website that is already up and
+                running. We'll aim to provide you with a tonne of advice, tips
+                and tricks so, you can design beautiful web experiences.
+                <br />
+                <br />
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!--=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=
+        Is This Boot Camp For You?
+    =*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*= -->
+        <section class="section3">
+          <div class="section-container">
+            <h3 class="section-head">Is This Boot Camp For You?</h3>
+            <p class="section-info">
+              The Boot Camp Is Completely Beginner Friendly
+            </p>
+          </div>
+          <div class="card-container">
+            <div class="row">
+              <div class="card">
+                <div class="image-holder">
+                  <img
+                    class="card-models"
+                    src="/assets/images/design-model.png"
+                    alt="img"
+                  />
+                </div>
+                <p>
+                  You don't need to know how to use CANVA software and no need
+                  to have CANVA pro account. Just having an account on Canva
+                  will work fine.
+                </p>
+              </div>
+              <div class="card">
+                <div class="image-holder">
+                  <img
+                    class="card-models"
+                    src="/assets/images/web-model.png"
+                    alt="img"
+                  />
+                </div>
+                <p>
+                  You need to have some basic understanding of HTML, and CSS.
+                  Remaining things we'll discover together.
+                </p>
+              </div>
+              <div class="card">
+                <div class="image-holder">
+                  <img
+                    class="card-models"
+                    src="/assets/images/git-model.png"
+                    alt="img"
+                  />
+                </div>
+                <p>
+                  No need to have any knowledge or experience in GitHub and
+                  version control that also, we’ll learn together.
+                </p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="card">
+                <div class="image-holder">
+                  <img
+                    class="card-models"
+                    src="/assets/images/js-model.png"
+                    alt="img"
+                  />
+                </div>
+                <p>
+                  You don’t need to be good at javascript all you need is to be
+                  comfortable with its syntax like variables, functions, loops,
+                  etc. We’ll learn the rest together.
+                </p>
+              </div>
+              <div class="card">
+                <div class="image-holder">
+                  <img
+                    class="card-models"
+                    src="/assets/images/computer-model.png"
+                    alt="img"
+                  />
+                </div>
+                <p>
+                  No need to have super fast computer. Need to have a personal
+                  laptop with you along with it’s charger.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!--=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=
+        Specification
+    =*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*= -->
+        <section class="section4">
+          <div class="specification-page-container">
+            <div class="specification-left-container">
+              <h3 class="section-head">Specification</h3>
+              <div class="bullet-pt">
+                <p class="dot"></p>
+                <h4>DESIGN</h4>
+              </div>
+
+              <p class="info para">
+                Design helps us engage, it keeps us connected to the world, it
+                helps us navigate our way through physical and digital spaces.
+                Design is used to communicate, depending on who we are – it can
+                be influential by understanding our behaviour and
+                demographics.It Usually involves choosing the right colors,
+                font, structure, photos, and many more.
+                <br />
+                <br />
+                • Tools used: CANVA Software (* Not to use pro)
+              </p>
+
+              <div class="bullet-pt">
+                <p class="dot"></p>
+                <h4>DEVELOP</h4>
+              </div>
+              <p class="info para">
+                Web development gives you the opportunity to express yourself
+                creatively on the internet. It Requires computer programming
+                knowledge and skills with languages of HTML, CSS, JavaScript.
+                <br />
+                <br />
+                • Tools used: VS CODE
+              </p>
+
+              <div class="bullet-pt">
+                <p class="dot"></p>
+                <h4>DEPLOY</h4>
+              </div>
+              <p class="info para">
+                The Version Control System helps manage the source code for the
+                software team by keeping track of all the code modifications. It
+                also protects the source code from any unintended human error
+                and consequences.
+                <br />
+                <br />
+                • Tools used: Github, Netlify.
+              </p>
+            </div>
+            <div class="specification-right-container">
+              <canvas class="webgl-3"></canvas>
+            </div>
+          </div>
+        </section>
+
+        <!--=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=
+        How To Prepare For The event?
+    =*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*= -->
+        <section class="section5">
+          <div class="sec5-container">
+            <h3 class="section-head prepare">
+              How to prepare for the boot camp?
+            </h3>
+            <p class="section-info">
+              Make Sure You Have All the checkbox Marked.
+            </p>
+            <div class="bullet-pt2">
+              <p class="dot2"></p>
+              <p class="prepare-info">
+                Create a normal account on Canva. (If you have the pro version
+                that’s fine, but we won’t use it ).
+              </p>
+            </div>
+
+            <div class="bullet-pt2">
+              <p class="dot2"></p>
+              <p class="prepare-info">
+                The code editor we’ll be using is Visual Studio Code but you can
+                use any editor you like. But using VS CODE is recommended.
+              </p>
+            </div>
+
+            <div class="bullet-pt2">
+              <p class="dot2"></p>
+              <p class="prepare-info">
+                The browser we’ll be using is Chrome but you can use any browser
+                you like. However, it is recommended to use one with a good
+                developer tools panel like Chrome or Firefox.
+              </p>
+            </div>
+
+            <div class="bullet-pt2">
+              <p class="dot2"></p>
+              <p class="prepare-info">
+                Install git on your computer. Create an account on GitHub if you
+                don’t have one.
+              </p>
+            </div>
+          </div>
+        </section>
+        <!--=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=
+        Meet Our Speakers
+    =*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*= -->
+        <section class="section6">
+          <div class="sec6-container">
+            <h3 class="section-head">Meet Our Astonishing Speakers</h3>
+            <div class="speaker-card-container">
+              <!-- ===========================================================================
+                                          DIPALI 
+          ============================================================================== -->
+              <div class="speaker-card">
+                <img
+                  class="speaker-image"
+                  src="/assets/images/Dipali.png"
+                  alt="img"
+                />
+                <h2 class="name">Dipali Bhalerao</h2>
+                <p class="skills">
+                  Skills: Design, Sketching, Art, and craft.
+                </p>
+                <a
+                  id="click-7"
+                  target="_blank"
+                  class="work"
+                  href="https://designpage.my.canva.site/ "
+                >
+                  WORK
+                </a>
+                <p class="social">
+                  <a
+                    class="social-ico-href"
+                    target="_blank"
+                    href="https://github.com/bhaleraodipali"
+                  >
+                    <i id="click-8" class="fa-brands fa-github social-ico"></i>
+                  </a>
+                  <a
+                    class="social-ico-href"
+                    target="_blank"
+                    href="https://www.linkedin.com/in/dipali-bhalerao-777b71239"
+                  >
+                    <i
+                      id="click-9"
+                      class="fa-brands fa-linkedin social-ico"
+                    ></i>
+                  </a>
+                </p>
+              </div>
+              <!-- ===========================================================================
+                                          ABHISHEK 
+          ============================================================================== -->
+              <div class="speaker-card">
+                <img
+                  class="speaker-image"
+                  src="/assets/images/abhishek.png"
+                  alt="img"
+                />
+                <h2 class="name">Abhishek Dhanke</h2>
+                <p class="skills">
+                  Skills: Docker, MERN, Firebase, Github.
+                </p>
+                <a
+                  id="click-10"
+                  class="work"
+                  target="_blank"
+                  href="https://github.com/abhishekrd"
+                >
+                  WORK
+                </a>
+                <p class="social">
+                  <a
+                    target="_blank"
+                    class="social-ico-href"
+                    href="https://github.com/abhishekrd"
+                  >
+                    <i id="click-11" class="fa-brands fa-github social-ico"></i>
+                  </a>
+                  <a
+                    target="_blank"
+                    class="social-ico-href"
+                    href="https://www.linkedin.com/in/abhishek-dhanke/"
+                  >
+                    <i
+                      id="click-12"
+                      class="fa-brands fa-linkedin social-ico"
+                    ></i>
+                  </a>
+                  <a
+                    target="_blank"
+                    class="social-ico-href"
+                    href="https://twitter.com/DhankeAbhishek"
+                  >
+                    <i
+                      id="click-13"
+                      class="fa-brands fa-twitter social-ico"
+                    ></i>
+                  </a>
+                </p>
+              </div>
+              <!-- ===========================================================================
+                                          SAHIL 
+          ============================================================================== -->
+              <div class="speaker-card">
+                <img
+                  class="speaker-image"
+                  src="/assets/images/sahil.png"
+                  alt="img"
+                />
+                <h2 class="name">Sahil Kandhare</h2>
+                <p class="skills">
+                  Skills: WebGL, Game-dev, blender, GitHub.
+                </p>
+                <a
+                  id="click-14"
+                  target="_blank"
+                  class="work"
+                  href="https://sahilk-027-castle-battle.netlify.app"
+                >
+                  WORK
+                </a>
+                <p class="social">
+                  <a
+                    href="https://github.com/SahilK-027"
+                    target="_blank"
+                    class="social-ico-href"
+                  >
+                    <i id="click-15" class="fa-brands fa-github social-ico"></i>
+                  </a>
+                  <a
+                    href="https://www.linkedin.com/in/sahilk027/"
+                    target="_blank"
+                    class="social-ico-href"
+                  >
+                    <i
+                      id="click-16"
+                      class="fa-brands fa-linkedin social-ico"
+                    ></i>
+                  </a>
+                  <a
+                    href="https://twitter.com/Sahil_K_27"
+                    target="_blank"
+                    class="social-ico-href"
+                  >
+                    <i
+                      id="click-17"
+                      class="fa-brands fa-twitter social-ico"
+                    ></i>
+                  </a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!--=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=
+        Frequently Asked Questions
+    =*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*= -->
+        <section class="section7">
+          <div class="faq-container">
+            <h3 class="section-head">Frequently Asked Questions</h3>
+
+            <!-- =========================================================
+                question 1
+        ========================================================= -->
+            <div class="accordion-cont">
+              <div class="question">
+                <div class="point">
+                  <p class="circle"></p>
+                  <span class="text">Do you provide any certificate?</span>
+                </div>
+                <div class="expand">
+                  <i
+                    id="plus_btn"
+                    onclick="showAnswer()"
+                    class="fa-solid fa-plus"
+                  ></i>
+                  <i
+                    id="minus_btn"
+                    onclick="hideAnswer()"
+                    class="fa-solid fa-minus"
+                  ></i>
+                </div>
+              </div>
+              <div id="answerdiv" class="answer">
+                <p class="faq-answer">
+                  "We will provide three types of certificates. First, all boot
+                  camp attendees will receive a certificate of participation.
+                  Second, those who score above a certain mark on the quiz will
+                  receive a certificate of appreciation. Lastly, the quiz winner
+                  will receive a certificate of excellence."
+                </p>
+              </div>
+            </div>
+            <!-- =========================================================
+                question 2
+        ========================================================= -->
+            <div class="accordion-cont">
+              <div class="question">
+                <div class="point">
+                  <p class="circle"></p>
+                  <span class="text">
+                    Is this a hands-on bootcamp? Will we work on any projects
+                    along the way?
+                  </span>
+                </div>
+                <div class="expand">
+                  <i
+                    id="plus_btn2"
+                    onclick="showAnswer2()"
+                    class="fa-solid fa-plus"
+                  ></i>
+                  <i
+                    id="minus_btn2"
+                    onclick="hideAnswer2()"
+                    class="fa-solid fa-minus"
+                  ></i>
+                </div>
+              </div>
+              <div id="answerdiv2" class="answer">
+                <p class="faq-answer">
+                  "Yes, the boot camp is a hands-on workshop. Although not a
+                  specific projects will be worked on during the boot camp, but
+                  participants will be given projects for practice purposes."
+                </p>
+              </div>
+            </div>
+
+            <!-- =========================================================
+                question 3
+        ========================================================= -->
+            <div class="accordion-cont">
+              <div class="question">
+                <div class="point">
+                  <p class="circle"></p>
+                  <span class="text">
+                    What will we learn about, front-end or back-end web
+                    development?
+                  </span>
+                </div>
+                <div class="expand">
+                  <i
+                    id="plus_btn3"
+                    onclick="showAnswer3()"
+                    class="fa-solid fa-plus"
+                  ></i>
+                  <i
+                    id="minus_btn3"
+                    onclick="hideAnswer3()"
+                    class="fa-solid fa-minus"
+                  ></i>
+                </div>
+              </div>
+              <div id="answerdiv3" class="answer">
+                <p class="faq-answer">
+                  "You will learn about basics of designing(color scheme, font
+                  choosing), web development(HTML, CSS, JS) and
+                  deployment(version control, github etc.). The boot camp will
+                  not specifically focusing on front-end or back-end development
+                  it will cover basics of all the aspects."
+                </p>
+              </div>
+            </div>
+
+            <!-- =========================================================
+                question 4
+        ========================================================= -->
+            <div class="accordion-cont">
+              <div class="question">
+                <div class="point">
+                  <p class="circle"></p>
+                  <span class="text">
+                    How many students are allowed to attend the boot camp?
+                  </span>
+                </div>
+                <div class="expand">
+                  <i
+                    id="plus_btn4"
+                    onclick="showAnswer4()"
+                    class="fa-solid fa-plus"
+                  ></i>
+                  <i
+                    id="minus_btn4"
+                    onclick="hideAnswer4()"
+                    class="fa-solid fa-minus"
+                  ></i>
+                </div>
+              </div>
+              <div id="answerdiv4" class="answer">
+                <p class="faq-answer">
+                  "50 Student will be allowed for the boot camp. The selection
+                  will be based on first come first serve basis. 50 students who
+                  will register first will get chance to attend the boot camp."
+                </p>
+              </div>
+            </div>
+
+            <!-- =========================================================
+                question 5
+        ========================================================= -->
+            <div class="accordion-cont">
+              <div class="question">
+                <div class="point">
+                  <p class="circle"></p>
+                  <span class="text">What will the registration fee be?</span>
+                </div>
+                <div class="expand">
+                  <i
+                    id="plus_btn5"
+                    onclick="showAnswer5()"
+                    class="fa-solid fa-plus"
+                  ></i>
+                  <i
+                    id="minus_btn5"
+                    onclick="hideAnswer5()"
+                    class="fa-solid fa-minus"
+                  ></i>
+                </div>
+              </div>
+              <div id="answerdiv5" class="answer">
+                <p class="faq-answer">
+                  "This bootcamp has no registration fees it's completely free.
+                  Join us for a free and exciting learning experience! Register
+                  now and take advantage of this opportunity to enhance your
+                  skills."
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!--=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=
+        Footer
+    =*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*= -->
+        <section class="section8">
+          <div class="footer">
+            <div class="top">
+              <img
+                class="footer-logo"
+                src="/assets/logos/pink-trinity-logo.png"
+                alt="logo"
+              />
+              <div class="footer-text">
+                <h1>TRINITY</h1>
+                <p>Design Develop Deploy</p>
+              </div>
+              <img
+                class="footer-logo"
+                src="/assets/logos/acm-rscoe-logo.png"
+                alt="logo"
+              />
+            </div>
+            <div class="description-event">
+              <p>
+                The technical event where we'll introduce our juniors to the
+                three stages of development Development, Design, and Deployment.
+              </p>
+            </div>
+
+            <div class="mid">
+              <div class="contacts">
+                <div class="co-ordinator-div">
+                  <h4 class="mid-footer-titles">Event Co-ordinators</h4>
+                  <p class="mid-footer-content">Sahil Kandhare</p>
+                  <p class="mid-footer-content">Phone: +91 8010876607</p>
+                  <p class="mid-footer-content">Sakshi Deo</p>
+                  <p class="mid-footer-content">Phone: +91 9325708951</p>
+                </div>
+
+                <div class="management-div">
+                  <h4 class="mid-footer-titles">Management</h4>
+                  <p class="mid-footer-content">Priyanka Sapkal (Faculty)</p>
+                  <p class="mid-footer-content">Phone: +91 9420154225</p>
+                  <p class="mid-footer-content">
+                    Shubham Asbe (Chair. RSCOE ACM)
+                  </p>
+                  <p class="mid-footer-content">Phone: +91 8698816985</p>
+                </div>
+              </div>
+
+              <div class="address">
+                <h4 class="mid-footer-titles">Contact us</h4>
+                <p class="mid-footer-content">
+                  Address: JSPM Rajarshi shahu college of engineering ,
+                  Tathawade, Service Rd, Ashok Nagar, Tathawade,
+                  Pimpri-Chinchwad, Maharashtra 411033.
+                </p>
+                <br />
+                <p class="mid-footer-content">Phone: +91 9850627659</p>
+              </div>
+
+              <div class="connection">
+                <h4 class="mid-footer-titles">Let’s stay connected</h4>
+                <p class="connection-content">
+                  Send us an email with your views; we'd love to hear from you.
+                </p>
+                <form
+                  action="mailto:rscoeacmchapter@gmail.com"
+                  method="post"
+                  enctype="text/plain"
+                >
+                  <div class="mail-box">
+                    <input
+                      class="mail"
+                      placeholder="Your Message"
+                      type="text"
+                      name="mail-text"
+                    />
+                    <input id="click-28" class="send-mail" type="submit" />
+                  </div>
+                </form>
+                <h4 class="mid-footer-titles">Follow us</h4>
+                <div class="footer-social-icon">
+                  <a
+                    target="_blank"
+                    href="https://www.instagram.com/acm.rscoe/"
+                    class="footer-social-icons"
+                  >
+                    <i id="click-29" class="fa-brands fa-instagram"></i>
+                  </a>
+                  <a
+                    target="_blank"
+                    href="https://www.linkedin.com/company/88452676/admin/"
+                    class="footer-social-icons"
+                  >
+                    <i id="click-30" class="fa-brands fa-linkedin"></i>
+                  </a>
+                  <a
+                    target="_blank"
+                    href="https://twitter.com/AcmRscoe"
+                    class="footer-social-icons"
+                  >
+                    <i id="click-31" class="fa-brands fa-twitter"></i>
+                  </a>
+                  <a
+                    target="_blank"
+                    href="https://www.facebook.com/people/RSCOE-ACM-Student-Chapter/100080572776401/"
+                    class="footer-social-icons"
+                  >
+                    <i id="click-32" class="fa-brands fa-facebook"></i>
+                  </a>
+                  <a
+                    target="_blank"
+                    href="https://t.me/+Kcmx1CZAnnthZDdl"
+                    class="footer-social-icons"
+                  >
+                    <i id="click-33" class="fa-brands fa-telegram"></i>
+                  </a>
+                  <a
+                    target="_blank"
+                    href="https://www.youtube.com/channel/UCPgNxRH7DsukMjmbZJ6hfnA"
+                    class="footer-social-icons"
+                  >
+                    <i id="click-34" class="fa-brands fa-youtube"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="bottom">
+              <p class="designers">
+                Designed and Developed By
+                <a
+                  id="click-35"
+                  href="https://github.com/SahilK-027"
+                  target="_blank"
+                >
+                  Sahil_K
+                </a>
+                And
+                <a
+                  id="click-36"
+                  href="https://github.com/abhishekrd"
+                  target="_blank"
+                >
+                  Abhishek_D
+                </a>
+              </p>
+              <p class="desclaimer">
+                © 2022 Trinity RSCOE ACM. All rights reserved. Use of this site
+                constitutes acceptance of our Privacy Policy. The material and
+                content on this site may not be reproduced, distributed,
+                transmitted, cached or otherwise used, except with the prior
+                written permission of team RSCOE ACM.
+              </p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/BezierPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/CSSPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TimelineLite.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenLite.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/debug.addIndicators.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.min.js"></script>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

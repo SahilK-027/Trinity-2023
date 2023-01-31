@@ -1,0 +1,91 @@
+.sec6-container {
+    margin: 0 180px;
+    text-align: center;
+    color: white;
+  }
+  .speaker-card-container {
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    justify-content: Space-evenly;
+    align-item: center;
+  }
+  .speaker-card {
+    background-color: #191a1e;
+    margin: 15px;
+    margin-top: 50px;
+    box-sizing: border-box;
+    width: 300px;
+    height: 400px;
+    border-radius: 30px;
+    transition: all 0.5s ease;
+  }
+  .speaker-card:hover {
+    background-color: #212328;
+  }
+  .skills {
+    padding: 20px 20px;
+  }
+  .speaker-image {
+    width: 50%;
+    border-radius: 50%;
+    margin: 20px 0;
+  }
+  .work {
+    text-decoration: none;
+    color: #7444ff;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+  }
+  .work::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  .work:hover::after {
+      transform: scaleX(1);
+      transform-origin: bottom left;
+    }
+  .social-ico{
+    margin-top: 20px;
+  }
+  .social-ico-href{
+    
+    color: #7444ff;
+    text-decoration: none;
+    font-size: 25px;
+    margin-left: 15px;
+    margin-right: 15px;
+    cursor: pointer;
+    position: relative;
+  }
+  .social-ico-href:hover {
+    cursor: pointer;
+    color: white;
+    transition: all 0.5s ease;
+  }
+  /*
+  * Responsive code
+  */
+  @media (max-width: 985px) {
+    .sec6-container {
+      margin: 0;
+      text-align: center;
+    }
+    .speaker-card-container {
+      flex-direction: column;
+      justify-content: center;
+      align-item: center;
+    }
+    .speaker-card {
+      align-self: center;
+    }
+  }
+  

@@ -1,0 +1,275 @@
+.footer {
+    border-top-right-radius: 100px;
+    border-top-left-radius: 100px;
+    background-color: #5d2dc2;
+  }
+  
+  /*
+  =*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=
+          TOP
+  =*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*= 
+  */
+  .top {
+    height: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+  }
+  .footer-logo {
+    width: 100px;
+    height: 100px;
+  }
+  .footer-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 50px;
+  }
+  .footer-text > h1 {
+    color: white;
+    font-family: 'Roboto Slab', serif;
+    font-size: 4rem;
+  }
+  .footer-text > p {
+    color: white;
+    font-size: 1rem;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 100;
+    color: #d6d6d6;
+  }
+  
+  .description-event {
+    text-align: center;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+  }
+  .description-event > p {
+    width: 800px;
+    color: white;
+    padding-top: 30px;
+  }
+  
+  /*
+  =*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=
+          mid
+  =*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*= 
+  */
+  
+  .mid {
+    font-family: 'Inter', sans-serif;
+    height: 50%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .contacts {
+    width: 33%;
+    padding: 100px;
+    padding-top: 0;
+    padding-bottom: 0;
+    color: white;
+  }
+  .address {
+    width: 34%;
+    padding: 100px;
+    padding-top: 0;
+    padding-bottom: 0;
+    color: white;
+  }
+  .connection {
+    width: 33%;
+    padding: 100px;
+    padding-top: 0;
+    padding-bottom: 0;
+    color: white;
+  }
+  .mid-footer-titles {
+    font-size: 25px;
+    margin-top: 60px;
+  }
+  .mid-footer-content {
+    font-size: 16px;
+    color: #d6d6d6;
+  }
+  .connection-content {
+    font-size: 16px;
+    color: #d6d6d6;
+  }
+  .mail-box {
+    margin-top: 30px;
+    border-bottom: 4px solid black;
+    position: relative;
+  }
+  .mail {
+    height: 40px;
+    width: 70%;
+    background: transparent;
+    border: none;
+    font-size: 18px;
+    color: white;
+  }
+  .mail::placeholder {
+    color: #000;
+    font-size: 18px;
+  }
+  .mail::active {
+    border: none;
+  }
+  .send-mail {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    position: relative;
+  }
+  .send-mail:hover {
+    color: #cecbcb;
+    transition: all 0.5s ease;
+  }
+  .footer-social-icons {
+    position: relative;
+    font-size: 35px;
+    margin-right: 8px;
+    margin-top: 20px;
+    color: #121316;
+    cursor: pointer;
+    color: white;
+    position: relative;
+  }
+  .footer-social-icons:hover {
+    color: #cecbcb;
+  }
+  
+  /*
+  =*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=
+          BOTTOM
+  =*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*= 
+  */
+  
+  .bottom {
+    height: 15%;
+    color: white;
+    font-family: 'Inter', sans-serif;
+  }
+  .bottom > .designers {
+    text-align: center;
+    font-size: 18px;
+    margin-top: 40px;
+    color: #a5a5a5;
+    position: relative;
+  }
+  .designers > a {
+    color: silver;
+  }
+  
+  .designers > a:hover {
+    color: white;
+    transition: all 0.5s ease;
+  }
+  .bottom > .desclaimer {
+    font-size: 14px;
+    padding: 20px 80px;
+    text-align: center;
+    color: #a5a5a5;
+  }
+  
+  /*
+  * Responsive code
+  */
+  @media (max-width: 985px) {
+    .footer {
+      border-top-right-radius: 30px;
+      border-top-left-radius: 30px;
+    }
+    .footer-logo {
+      width: 40px;
+      height: 40px;
+    }
+    .footer-text {
+      margin: 0 20px;
+    }
+    .footer-text > h1 {
+      font-size: 2.5rem;
+    }
+    .footer-text > p {
+      font-size: 1rem;
+      font-weight: 100;
+    }
+    .description-event > p {
+      font-size: 15px;
+      width: 300px;
+    }
+    .mid {
+      flex-direction: column;
+      margin-left: 0px;
+      margin-right: 0px;
+    }
+    .contacts {
+      width: 90%;
+      padding: 18px;
+      padding-right: 0px;
+      padding-top: 0;
+    }
+    .address {
+      width: 90%;
+      padding: 18px;
+      padding-top: 0;
+    }
+    .connection {
+      width: 90%;
+      padding: 18px;
+      padding-top: 0;
+    }
+    .mid-footer-titles {
+      font-size: 20px;
+      margin-top: 60px;
+    }
+    .mid-footer-content {
+      font-size: 15px;
+      color: #d6d6d6;
+      width: 350px;
+    }
+    .connection-content {
+      font-size: 15px;
+      color: #d6d6d6;
+      width: 350px;
+    }
+    .mail-box {
+      margin-top: 30px;
+      border-bottom: 4px solid black;
+      width: 100%;
+    }
+    .mail {
+      height: 40px;
+      width: 70%;
+      font-size: 18px;
+    }
+    .mail::placeholder {
+      font-size: 18px;
+    }
+    .send-mail {
+      font-size: 20px;
+    }
+    .footer-social-icons {
+      font-size: 30px;
+      margin: 12px;
+      color: white;
+    }
+    .bottom > .designers {
+      padding: 20px;
+      font-size: 15px;
+      margin-top: 40px;
+    }
+    .bottom > .desclaimer {
+      padding: 0px 20px;
+      padding-bottom: 30px;
+      text-align: center;
+      font-size: 12px;
+    }
+  }
+  
