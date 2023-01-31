@@ -324,6 +324,12 @@
     color: white;
     transition: all 0.5s ease;
   }
+  #click-6{
+    cursor: pointer;
+  }
+  .register-href{
+    cursor: default;
+  }
   .register-btn {
     border-radius: 3.125rem;
     width: 125px;
@@ -339,7 +345,6 @@
     font-family: 'Inter', sans-serif;
   }
   .register-btn:hover {
-    cursor: pointer;
     background-color: #562fc9;
     color: #fff;
   }
