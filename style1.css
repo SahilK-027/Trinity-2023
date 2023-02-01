@@ -395,7 +395,7 @@
   }
   
   .home-left-container {
-    padding-top: 200px;
+    padding-top: 150px;
     display: flex;
     flex-direction: column;
     width: 70%;
@@ -428,6 +428,13 @@
     color: #fff;
     font-size: 16px;
     font-family: 'Inter', sans-serif;
+  }
+  .visitor-cnt{
+    font-family: 'Inter', sans-serif;
+    color: #7444ff;
+  }
+  #visits{
+    color:"red";
   }
   .home-left-container >a> button {
     padding: 1rem 4rem;

@@ -28,8 +28,15 @@
     />
     <link rel="icon" type="image/x-icon" href="/assets/logos/favicon.ico" />
 
-    <!-- SCRIPT IN JAVASCRIPT -->
+    <!-- SCRIPTS-->
+    <script
+      async
+      src="https://api.countapi.xyz/hit/trinity-2023.vercel.app/de3459a5-c26d-4a12-8021-ef976a4ce450?callback=websiteVisits"
+    ></script>
     <script>
+      function websiteVisits(response) {
+        document.querySelector('#visits').textContent = response.value
+      }
       const showAnswer = () => {
         const ans = document.getElementById('answerdiv')
         const plus_btn = document.getElementById('plus_btn')
@@ -129,7 +136,7 @@
         ans.style.display = 'none'
         plus_btn.style.display = 'block'
         minus_btn.style.display = 'none'
-      };
+      }
     </script>
   </head>
   <body>
@@ -178,8 +185,8 @@
             <div class="pop-up-text">
               <p>
                 <strong>Attention mobile users:</strong>
-                "This website uses WebGL for 3D interactive components, which may
-                not be fully supported on the mobile display. For the best
+                "This website uses WebGL for 3D interactive components, which
+                may not be fully supported on the mobile display. For the best
                 interactive browsing experience, we recommend visiting our
                 website on a
                 <strong>desktop or laptop computer.</strong>
@@ -215,7 +222,11 @@
                 </div>
                 <div class="nav-list">
                   <ul>
-                    <a id="click-1" class="nav-items" href="https://trinity-2023.vercel.app/">
+                    <a
+                      id="click-1"
+                      class="nav-items"
+                      href="https://trinity-2023.vercel.app/"
+                    >
                       <li>Home</li>
                     </a>
                     <a
@@ -256,16 +267,21 @@
                 version control. We'll teach them the fundamentals of Canva, web
                 development, and GitHub for this.
               </p>
-             <a class="register-href" href="https://trinity-register.vercel.app/"><button id="click-6">Register</button></a> 
+              <h3 class="visitor-cnt">
+                Visitors Count:
+                <span id="visits"></span>
+              </h3>
+              <a
+                class="register-href"
+                href="https://trinity-register.vercel.app/"
+              >
+                <button id="click-6">Register</button>
+              </a>
             </div>
             <div class="home-right-container"></div>
           </div>
 
-          <img
-            class="rocket"
-            src="/assets/images/rocket1.png"
-            alt="img"
-          />
+          <img class="rocket" src="/assets/images/rocket1.png" alt="img" />
         </section>
 
         <!--=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=
@@ -284,9 +300,9 @@
                 discovering what DEVELOPMENT is and why using the code hosting
                 platform for version control is a must. We will then discover
                 the three main phases of any development (let it be APP or WEB
-                basics remain the same)and once the basics are acquired, we
-                will move on to practical hands-on web development. Wherein we
-                will design a simple but beautiful-looking website using design
+                basics remain the same)and once the basics are acquired, we will
+                move on to practical hands-on web development. Wherein we will
+                design a simple but beautiful-looking website using design
                 software CANVA, then develop in VS-CODE it with HTML, CSS, and a
                 bit of javascript. And then deploy it using GitHub and Netlify
                 (OR Vercel).
@@ -849,7 +865,8 @@
             <div class="description-event">
               <p>
                 The technical event where we'll introduce our juniors to the
-                three stages of software developmnet Design, Develop and Deployment.
+                three stages of software developmnet Design, Develop and
+                Deployment.
               </p>
               <a id="click-38" href="https://trinity-community.vercel.app/">
                 <button class="register-btn">Community</button>
