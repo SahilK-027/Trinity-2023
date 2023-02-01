@@ -695,6 +695,7 @@ let obj34 = document.getElementById('click-34');
 let obj35 = document.getElementById('click-35');
 let obj36 = document.getElementById('click-36');
 let obj37 = document.getElementById('click-pop-up-close')
+let obj38 = document.getElementById('click-38')
 
 if (!mobile) {
     obj1.addEventListener('mouseenter', () => {  ctx.resume(); hoverSound.play() })
@@ -761,6 +762,7 @@ obj34.addEventListener('click', () => {  ctx.resume(); clickSound.play() })
 obj35.addEventListener('click', () => {  ctx.resume(); clickSound.play() })
 obj36.addEventListener('click', () => {  ctx.resume(); clickSound.play() })
 obj37.addEventListener('click', () => {  ctx.resume(); clickSound.play() })
+obj38.addEventListener('click', () => {  ctx.resume(); clickSound.play() })
 
 
 /*
