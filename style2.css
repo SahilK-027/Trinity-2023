@@ -21,7 +21,7 @@
     padding-left: 30px;
     display: flex;
     flex-direction: column;
-    align-item: center;
+    align-items: center;
     justify-content:center;
     width: 60%;
   }
@@ -30,6 +30,9 @@
     color: #7444ff;
     padding-top: 80px;
     font-family: 'Inter', sans-serif;
+  }
+  .title-2{
+    padding-top: 10px;
   }
   .info {
     font-family: 'Inter', sans-serif;
