@@ -139,7 +139,7 @@
   .footer-social-icons {
     position: relative;
     font-size: 35px;
-    margin-right: 8px;
+    margin-right: 12px;
     margin-top: 20px;
     color: #121316;
     cursor: pointer;
@@ -262,7 +262,7 @@
     }
     .footer-social-icons {
       font-size: 30px;
-      margin: 12px;
+      margin: 10px;
       color: white;
     }
     .bottom > .designers {
