@@ -6,8 +6,8 @@
   .speaker-card-container {
     font-family: 'Inter', sans-serif;
     display: flex;
-    justify-content: Space-evenly;
-    align-item: center;
+    justify-content: space-evenly;
+    align-items: center;
   }
   .speaker-card {
     background-color: #191a1e;
